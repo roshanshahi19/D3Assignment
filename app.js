@@ -3,9 +3,7 @@ Promise.all([d3.csv("/data1.csv"),d3.csv("/data2.csv")]).then(function(data){
     var data2=[];
     data1=data[0];
     data2=data[1];
-    console.log(data1)
-    console.log(data1.columns)
-   console.log(data2[0]["IncomeGroup"])
+
   var new_data=[];
   var i=0;
   for(i=0;i<data2.length;i++){
@@ -121,9 +119,7 @@ var lst=["Total_pop1960",
 "Total_pop2010",
 "Total_pop2015",
 ]
-console.log(lst)
-console.log(data_visual1);
-  
+
 
 var margin = {
     top: 20,
